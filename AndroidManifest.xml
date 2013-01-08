@@ -38,6 +38,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.osef.gowyworld.MainActivity" />
         </activity>
+        <activity
+            android:name="com.osef.gowyworld.Sauvegarde"
+            android:label="@string/title_activity_sauvegarde"
+            android:parentActivityName="com.osef.gowyworld.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.osef.gowyworld.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.osef.gowyworld.sauvegarde.Sauvegarde1"
+            android:label="@string/title_activity_sauvegarde1"
+            android:parentActivityName="com.osef.gowyworld.Sauvegarde" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.osef.gowyworld.Sauvegarde" />
+        </activity>
     </application>
 
 </manifest>

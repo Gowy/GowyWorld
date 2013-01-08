@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sauvegarde1" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hello_sauvegarde" />
+
+
+
+        <EditText
+            android:id="@+id/editTextSauve"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextSauve" >        
+        
+        <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.33"
+        android:onClick="addSauvegarde"
+        android:text="ADD" />
+        
+        <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.33"
+        android:onClick="cleanSauvegarde"
+        android:text="CLEAN" />        
+
+        <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.33"
+        android:onClick="stopSauvegarde"
+        android:text="STOP" />            
+        
+    </LinearLayout>
+
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout1" />
+
+</RelativeLayout>

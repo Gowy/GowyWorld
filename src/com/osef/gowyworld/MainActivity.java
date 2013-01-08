@@ -28,5 +28,9 @@ public class MainActivity extends Activity {
         startActivity(intent);
 	}
 	
+	public void goSauvegarde (View v) {
+		Intent intent = new Intent(this,Sauvegarde.class);
+        startActivity(intent);
+	}	
 	
 }
