@@ -54,6 +54,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.osef.gowyworld.Sauvegarde" />
         </activity>
+        <activity
+            android:name="com.osef.gowyworld.sauvegarde.Sauvegarde2"
+            android:label="@string/title_activity_sauvegarde2"
+            android:parentActivityName="com.osef.gowyworld.Sauvegarde" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.osef.gowyworld.Sauvegarde" />
+        </activity>
+        <activity
+            android:name="com.osef.gowyworld.AppliPreference"
+            android:label="@string/title_activity_appli_preference" >
+        </activity>
     </application>
 
 </manifest>

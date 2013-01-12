@@ -5,6 +5,7 @@ import com.osef.gowyworld.R.layout;
 import com.osef.gowyworld.R.menu;
 
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,7 +13,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 
@@ -34,6 +37,19 @@ public class Sauvegarde1 extends Activity {
 		textEd = (EditText)findViewById(R.id.editTextSauve);
 		settings = getSharedPreferences(SAVE_NAME, 0);
 		showSauvegarde();
+		
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+		
+		String comptes = prefs.getString("valeur_compte", "compte inexistant");
+		String Alerte = prefs.getString("sync_frequency", "aucune frequence");
+		
+		String[] values = new String[] { "Compte : "+comptes, "Frequence Alerte : "+Alerte };
+		
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+				  android.R.layout.simple_list_item_1, android.R.id.text1, values);
+		
+		ListView test = (ListView) findViewById(R.id.list1);
+		test.setAdapter(adapter);
 	}
 
 	@Override

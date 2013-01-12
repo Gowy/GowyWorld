@@ -1,31 +1,28 @@
-package com.osef.gowyworld;
+package com.osef.gowyworld.sauvegarde;
 
-import com.osef.gowyworld.sauvegarde.Sauvegarde1;
-import com.osef.gowyworld.sauvegarde.Sauvegarde2;
+import com.osef.gowyworld.R;
+
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.content.Intent;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.support.v4.app.NavUtils;
 
-public class Sauvegarde extends Activity {
+public class Sauvegarde2 extends Activity {
 
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_sauvegarde);
-		// Show the Up button in the action bar.
-	
+		setContentView(R.layout.activity_sauvegarde2);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_sauvegarde, menu);
+		getMenuInflater().inflate(R.menu.activity_sauvegarde2, menu);
 		return true;
 	}
 
@@ -45,29 +42,22 @@ public class Sauvegarde extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	
+	private void showSauvegarde() {
 
-	
-	public void goSauvegarde1 (View v) {
-		Intent intent = new Intent(this,Sauvegarde1.class);
-        startActivity(intent);
-	}		
-		
-	public void goSauvegarde2 (View v) {
-		Intent intent = new Intent(this,Sauvegarde2.class);
-        startActivity(intent);
-	}	
-	
-	public void goSauvegarde3 (View v) {
-		Log.d(ACTIVITY_SERVICE,"goSauvegarde3()");
-	}	
-	
-	public void goSauvegarde4 (View v) {
-		Log.d(ACTIVITY_SERVICE,"goSauvegarde4()");
 	}
 	
-	public void retour (View v) {
+	public void addSauvegarde (View v) {
+
+	}	
+	
+	public void cleanSauvegarde (View v) {
+		
+	}	
+	
+	public void stopSauvegarde (View v) {	
 		this.finish();
 	}
-	
-	
+
 }

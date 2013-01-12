@@ -1,0 +1,40 @@
+<resources>
+
+    <string name="title_activity_appli_preference">Mes préférences à moi !</string>
+
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_display_name">Compte Perso</string>
+    <string name="pref_default_display_name">Anonymous</string>
+    
+
+        
+    <string name="pref_header_notifications">Alerte</string>
+    <string name="pref_title_new_message_notifications">Nouveau message</string>
+    <string name="pref_description_new_message_notifications">Alerte lors d\'une mise à jour du contenu d\'une facture</string>    
+    <string name="pref_title_ringtone">Sonnerie</string>
+    <string name="pref_ringtone_silent">Silence</string>
+    
+    
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Mise à jour</string>
+    <string name="pref_title_sync_frequency">Fréquence</string>
+
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+ 
+</resources>

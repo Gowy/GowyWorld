@@ -6,6 +6,8 @@
     <string name="hello_activitya">You\'r in Activity A, bro !</string>
     <string name="hello_activityb">You\'r in Activity B, dude !</string>
     <string name="hello_sauvegarde">You\'r in Sauvegarde, Bro !</string>
+    <string name="hello_sauvegarde1">You\'r in Sauvegarde -Preference-, Bro !</string>
+    <string name="hello_sauvegarde2">You\'r in Sauvegarde -Externe-, Bro !</string>
     <string name="menu_settings">Settings</string>
     <string name="Appli_1">Activity POC</string>
     <string name="Appli_2">Sauvegarde POC</string>
@@ -18,9 +20,12 @@
     <string name="title_activity_activity_b">ActivityB</string>
     <string name="title_activity_sauvegarde">Sauvegarde</string>
     <string name="Button_sauvegarde1">Preference</string>
-    <string name="Button_sauvegarde2">Interne</string>
-    <string name="Button_sauvegarde3">Externe</string>
-    <string name="Button_sauvegarde4">SQL</string>
+    <string name="Button_sauvegarde2">Externe</string>
+    <string name="Button_sauvegarde3">SQL</string>
+    <string name="Button_sauvegarde4">Autres</string>
+    <string name="Button_sauvegarde5">Retour</string>    
     <string name="title_activity_sauvegarde1">Sauvegarde1</string>
+    <string name="title_activity_sauvegarde2">Sauvegarde2</string>
+    <string name="titre_pref_general">Préférence : Options</string>
 
 </resources>
